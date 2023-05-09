@@ -28,7 +28,7 @@ function Home() {
     getMovies();
   }, []);
 
-  console.log(movie);
+  // console.log(movie);
   return (
     <>
       <div className="container-fluid mb-5">
