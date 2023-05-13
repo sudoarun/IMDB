@@ -47,7 +47,7 @@ function Home() {
           <div className="mt-3">
             <div className="row">
               {movie.map((data, index) => (
-                <div className="col-2" key={data.title}>
+                <div className="col-2 mt-5" key={data.title}>
                   <Card
                     movie={data}
                     setModalTrailerUrl={setModalTrailerUrl}

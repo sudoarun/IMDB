@@ -9,14 +9,14 @@ function Card({ movie, setModalTrailerUrl, SetModaltitle }) {
         className="bg-image hover-overlay ripple"
         data-mdb-ripple-color="light"
       >
-        <img src={image} alt="ima" className="img-fluid" />
+        <img src={image} alt="Movie Poster" className="img-fluid" />
       </div>
       <div className="p-2 card-body position-relative">
         <i className="fas fa-star text-warning mb-3">
           <span className="text-muted fs-6"> {rating}</span>
         </i>
         <h5 className="card-title text-white font-weight-bold">
-          <span className="fs-6">{title}</span>
+          <span className="fs-6 lineLimit">{title}</span>
         </h5>
         <div className="">
           <NavLink

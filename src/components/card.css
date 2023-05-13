@@ -25,3 +25,18 @@
 .top-50 {
     top: 72% !important;
 }
+
+.lineLimit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+ }
+ .bg-image{
+    height: 18rem;
+ }
+ .cardBG{
+    height: 28rem;
+ }
