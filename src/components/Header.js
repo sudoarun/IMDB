@@ -97,8 +97,8 @@ function Header({ SetLogIn }) {
                 <i className="fas fa-bookmark"></i> Wishlist
               </NavLink>
             </li>
-            <li className="nav-item">
-              {/* <a className="nav-link fw-semibold text-white" href="1">SignIn</a> */}
+            {/* <li className="nav-item">
+              <a className="nav-link fw-semibold text-white" href="1">SignIn</a>
               {SetLogIn ? (
                 <span
                   className="nav-link fw-semibold text-white"
@@ -114,12 +114,37 @@ function Header({ SetLogIn }) {
                   SignIn
                 </NavLink>
               )}
-              {/* <NavLink
-                to={"/signin"}
-                className="nav-link fw-semibold text-white"
+            </li> */}
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle fw-semibold text-white"
+                href="1"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
               >
-                SignIn
-              </NavLink> */}
+                <i className="fas fa-user">User</i>
+              </a>
+              <ul
+                className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
+                style={{ marginLeft: "-130px", background: "black" }}
+              >
+                <li>
+                  <a className="dropdown-item text-white" href="1">
+                    Account Settings
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item text-white" href="1">
+                    User Settings
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item text-white" href="1">
+                    Sign Out
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="nav-item dropdown">
               <a
