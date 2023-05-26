@@ -62,17 +62,17 @@ function Movie() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="mt-3">
             <div className="d-flex">
               <div className="row">
-                <div className="col-4">
+                <div className="col-12 col-sm-4 mb-n5">
                   <img
                     alt="h"
                     src={movie.image}
                     className="w-100 border h-75"
                   ></img>
                 </div>
-                <div className="col-8">
+                <div className="col-12 col-sm-8">
                   <div className="border text-white pt-4 px-3 pb-4">
                     <span className="fw-semibold">
                       <span className="text-warning">Description:</span>{" "}
