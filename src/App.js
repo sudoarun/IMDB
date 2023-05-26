@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <Header SetLogIn={SetLogIn} />
+      <Header SetLogIn={SetLogIn} logIn={logIn} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn SetLogIn={SetLogIn} />} />

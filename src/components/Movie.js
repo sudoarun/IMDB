@@ -25,8 +25,8 @@ function Movie() {
     <>
       <div className="container">
         <div>
-          <header className="d-flex justify-content-end text-white fw-semibold align-items-center">
-            <span className="pe-3 border-end">Cast & Crew</span>
+          <header className="d-flex justify-content-end text-white fw-semibold align-items-center ">
+            <span className="pe-3 border-end ">Cast & Crew</span>
             <span className="px-3 border-end">IMDb Pro</span>
             <span className="px-3 border-end">
               <i className="fas fa-grip-horizontal fs-4 me-1"> </i> All Topics

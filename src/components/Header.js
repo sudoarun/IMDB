@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Header({ SetLogIn }) {
+function Header({ SetLogIn, logIn }) {
   const signHandle = () => {
     SetLogIn(false);
   };
@@ -123,7 +123,7 @@ function Header({ SetLogIn }) {
                 data-mdb-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i className="fas fa-user">User</i>
+                <i className="fas fa-user">{!logIn ? "User" : "Admin"}</i>
               </a>
               <ul
                 className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
@@ -140,7 +140,11 @@ function Header({ SetLogIn }) {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item text-white" href="1">
+                  <a
+                    className="dropdown-item text-white"
+                    href="."
+                    onClick={signHandle}
+                  >
                     Sign Out
                   </a>
                 </li>
